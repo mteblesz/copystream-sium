@@ -22,4 +22,4 @@ jobs:
         pip install pyperclip python-docx
 
     - name: Run Python script
-      run: python your_script.py
+      run: python setup.py build_exe
