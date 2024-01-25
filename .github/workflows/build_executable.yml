@@ -26,3 +26,9 @@ jobs:
 
     - name: Run Python script
       run: python setup.py build_exe
+
+    - name: Upload executable
+      uses: actions/upload-artifact@v2
+      with:
+        name: my-artifact
+        path: build/exe.win-amd64-3.8
